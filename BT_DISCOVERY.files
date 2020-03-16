@@ -1,0 +1,10 @@
+CMakeLists.txt
+README.rst
+go_ser.sh
+main/CMakeLists.txt
+main/bt_discovery.c
+main/component.mk
+sdkconfig
+sdkconfig.defaults
+../crosstool-NG/.build/xtensa-esp32-elf/buildtools/lib/gcc/xtensa-esp32-elf/8.2.0/include/stddef.h
+../crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/include/stdbool.h
