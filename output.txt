@@ -1,0 +1,80 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4
+load:0x3fff0034,len:7016
+load:0x40078000,len:13720
+load:0x40080400,len:3920
+entry 0x40080680
+I (29) boot: ESP-IDF v4.2-dev-674-g640c7c510 2nd stage bootloader
+I (29) boot: compile time 14:56:44
+I (29) boot: chip revision: 1
+I (33) boot_comm: chip revision: 1, min. bootloader chip revision: 0
+I (40) boot.esp32: SPI Speed      : 40MHz
+I (45) boot.esp32: SPI Mode       : DIO
+I (49) boot.esp32: SPI Flash Size : 4MB
+I (54) boot: Enabling RNG early entropy source...
+I (59) boot: Partition Table:
+I (63) boot: ## Label            Usage          Type ST Offset   Length
+I (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (85) boot:  2 factory          factory app      00 00 00010000 00100000
+I (92) boot: End of partition table
+I (97) boot_comm: chip revision: 1, min. application chip revision: 0
+I (104) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x1432c ( 82732) map
+I (144) esp_image: segment 1: paddr=0x00024354 vaddr=0x3ffbdb60 size=0x032c0 ( 12992) load
+I (150) esp_image: segment 2: paddr=0x0002761c vaddr=0x40080000 size=0x00400 (  1024) load
+I (151) esp_image: segment 3: paddr=0x00027a24 vaddr=0x40080400 size=0x085f4 ( 34292) load
+I (174) esp_image: segment 4: paddr=0x00030020 vaddr=0x400d0020 size=0x58fd8 (364504) map
+I (312) esp_image: segment 5: paddr=0x00089000 vaddr=0x400889f4 size=0x0a3bc ( 41916) load
+I (341) boot: Loaded app from partition at offset 0x10000
+I (341) boot: Disabling RNG early entropy source...
+I (341) cpu_start: Pro cpu up.
+I (345) cpu_start: Application information:
+I (350) cpu_start: Project name:     bt_discovery
+I (355) cpu_start: App version:      cdf303a-dirty
+I (361) cpu_start: Compile time:     Mar 16 2020 14:56:43
+I (367) cpu_start: ELF file SHA256:  68a1b594c77ea6fe...
+I (373) cpu_start: ESP-IDF:          v4.2-dev-674-g640c7c510
+I (379) cpu_start: Starting app cpu, entry point is 0x400811a0
+I (0) cpu_start: App cpu up.
+I (390) heap_init: Initializing. RAM available for dynamic allocation:
+I (396) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM
+I (402) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM
+I (409) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM
+I (415) heap_init: At 3FFBDB5C len 00000004 (0 KiB): DRAM
+I (421) heap_init: At 3FFC8420 len 00017BE0 (94 KiB): DRAM
+I (427) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (433) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (440) heap_init: At 40092DB0 len 0000D250 (52 KiB): IRAM
+I (446) cpu_start: Pro cpu start user code
+I (464) spi_flash: detected chip: generic
+I (465) spi_flash: flash io: dio
+I (465) cpu_start: Starting scheduler on PRO CPU.
+I (0) cpu_start: Starting scheduler on APP CPU.
+I (551) BTDM_INIT: BT controller compile version [ab2cbc7]
+I (551) system_api: Base MAC address is not set
+I (551) system_api: read default base MAC address from EFUSE
+I (661) phy: phy_version: 4180, cb3948e, Sep 12 2019, 16:39:13, 0, 0
+I (1241) GAP: Discovery started.
+I (1411) GAP: Device found: bc:ff:eb:11:5a:53
+I (1411) GAP: --Class of Device: 0x5a020c
+I (1411) GAP: --RSSI: -60
+I (1411) GAP: Found a target device, address bc:ff:eb:11:5a:53, name smoomot
+I (1421) GAP: Cancel device discovery ...
+I (1431) GAP: Device discovery stopped.
+I (1431) GAP: Discover services ...
+I (3721) GAP: Services for device bc:ff:eb:11:5a:53 found
+I (3721) GAP: --110a
+I (3721) GAP: --1105
+I (3721) GAP: --1115
+I (3721) GAP: --1116
+I (3721) GAP: --110e
+I (3731) GAP: --112f
+I (3731) GAP: --1112
+I (3731) GAP: --111f
+I (3741) GAP: --1132
+
